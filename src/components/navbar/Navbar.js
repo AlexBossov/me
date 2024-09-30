@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import {FaGithub, FaDiscord} from "react-icons/fa";
 import {logo} from "../../assets/index"
 import { navLinksData } from '../../constants';
+import {AiFillInstagram} from "react-icons/ai";
 
 const Navbar = () => {
   const [showMenu, setShowMenu]=useState(false)
@@ -45,9 +46,9 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="text-sm text-gray-400 mt-2">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Earum soluta perspiciatis molestias enim cum repellat, magnam
-                  exercitationem distinctio aliquid nam.
+                    I already told you what madness is, didn't I?
+                    Madness is doing the same thing over and over again, hoping for change.
+                    That's madness.
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -76,13 +77,13 @@ const Navbar = () => {
                 </h2>
                 <div className="flex gap-4">
                   <span className="bannerIcon">
-                    <FaFacebookF />
+                    <FaGithub />
                   </span>
                   <span className="bannerIcon">
-                    <FaTwitter />
+                    <FaDiscord />
                   </span>
                   <span className="bannerIcon">
-                    <FaLinkedinIn />
+                    <AiFillInstagram />
                   </span>
                 </div>
               </div>
